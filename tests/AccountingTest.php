@@ -81,6 +81,15 @@ class AccountingTest extends TestCase
         $this->assertEquals(0, $result);
     }
 
+    public function testQueryAllTime()
+    {
+        $startDate = new DateTime('20180301');
+        $endDate = new DateTime('20211230');
+        $result = $this->accounting->queryBudget($startDate, $endDate);
+
+        $this->assertEquals(4215, $result);
+    }
+
     private function fakeData()
     {
         $arr = [
