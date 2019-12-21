@@ -4,7 +4,7 @@ use App\Accounting;
 use App\IBudgetRepo;
 use PHPUnit\Framework\TestCase;
 
-class TestAccounting extends TestCase
+class AccountingTest extends TestCase
 {
     private $accounting;
 
